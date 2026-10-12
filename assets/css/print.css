@@ -1,0 +1,38 @@
+/* ==========================================================================
+   IRON ARENA — Print stylesheet
+   Used for: weekly routines (programs.html), meal plans (diet.html / bmi.html)
+   ========================================================================== */
+@page { size: A4; margin: 14mm 12mm; }
+
+html, body { background: #fff !important; color: #111 !important; }
+* { box-shadow: none !important; text-shadow: none !important; animation: none !important; transition: none !important; }
+html.js [data-reveal] { opacity: 1 !important; transform: none !important; }
+
+.site-header, .drawer, .site-footer, .fab-stack, .chat, .book-bar, .loader, .cursor-dot, .cursor-ring,
+.toasts, .read-progress, .no-print, .tabs, .btn, .page-hero__media, .grain, .lightbox, .modal { display: none !important; }
+
+.page-hero { padding: 0 0 8mm !important; color: #111 !important; }
+.page-hero::before, .page-hero::after { display: none !important; }
+.page-hero p, .page-hero .breadcrumb { color: #444 !important; }
+.section { padding: 6mm 0 !important; background: #fff !important; }
+.container { max-width: none !important; padding: 0 !important; }
+
+.card, .acc, .tool__panel, .glass { background: #fff !important; border: 1px solid #ddd !important; -webkit-backdrop-filter: none !important; backdrop-filter: none !important; }
+.text-gold, .eyebrow, .meal__slot, .meal-day__kcal { color: #8a6a12 !important; }
+.text-muted, .meal__kcal, .lead { color: #555 !important; }
+
+/* expand every accordion panel */
+.acc__panel { display: block !important; grid-template-rows: 1fr !important; }
+.acc__panel > div { overflow: visible !important; }
+.acc__icon { display: none !important; }
+
+/* show all routine panels when printing the whole page */
+.print-all .tab-panel[hidden] { display: block !important; }
+
+table, .acc, .meal, .plan-day, .routine, .exercise { break-inside: avoid; page-break-inside: avoid; }
+.routine { page-break-after: always; }
+.routine-table th, .routine-table td, .compare th, .compare td { border: 1px solid #ccc !important; color: #111 !important; }
+.routine-table thead th { background: #f3efe4 !important; color: #5c4508 !important; }
+.table-wrap { overflow: visible !important; border: 0 !important; }
+a[href^="http"]::after { content: ""; }
+.print-only { display: block !important; }
