@@ -30,7 +30,7 @@ SITE_NAME = "آیرون آرنا | IRON ARENA"
 OG_IMAGE = "assets/img/og-image.jpg"
 THEME_COLOR = "#0A0A0A"
 
-COMMON_JS = ["assets/js/lqip.js", "assets/vendor/gsap.min.js", "assets/js/main.js"]
+COMMON_JS = ["assets/js/lqip.js", "assets/vendor/gsap.min.js", "assets/js/main.js", "assets/js/karensoft-credit.js"]
 
 PAGES = {
     "index.html": dict(
